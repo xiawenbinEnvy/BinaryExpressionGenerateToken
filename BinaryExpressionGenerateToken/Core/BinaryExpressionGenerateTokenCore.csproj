@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1BE9FA10-6967-4386-8257-70B786B41FD1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Core</RootNamespace>
+    <AssemblyName>Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BrowserAPI\FactorySelectBrowserAPI.cs" />
+    <Compile Include="BrowserAPI\FileReaderAPI.cs" />
+    <Compile Include="BrowserAPI\GeolocationAPI.cs" />
+    <Compile Include="BrowserAPI\HistoryAPI.cs" />
+    <Compile Include="BrowserAPI\IBrowserAPI.cs" />
+    <Compile Include="BrowserAPI\MediaDeviceAPI.cs" />
+    <Compile Include="BrowserAPI\MessageChannelAPI.cs" />
+    <Compile Include="BrowserAPI\ScreenAPI.cs" />
+    <Compile Include="Browser\Chrome.cs" />
+    <Compile Include="Browser\Firefox.cs" />
+    <Compile Include="Browser\IBrowser.cs" />
+    <Compile Include="Browser\IE10.cs" />
+    <Compile Include="Browser\IE11.cs" />
+    <Compile Include="Browser\IE6.cs" />
+    <Compile Include="Browser\IE7.cs" />
+    <Compile Include="Browser\IE8.cs" />
+    <Compile Include="Browser\IE9.cs" />
+    <Compile Include="Browser\Opera.cs" />
+    <Compile Include="Browser\Safari.cs" />
+    <Compile Include="JSPackerCrypto\DeanEdward\DeanEdwardPackerCrypto.cs" />
+    <Compile Include="JSPackerCrypto\DeanEdward\ECMAScriptPacker.cs" />
+    <Compile Include="JSPackerCrypto\DeanEdward\ParseMaster.cs" />
+    <Compile Include="JSPackerCrypto\FactoryJSPackerCrypto.cs" />
+    <Compile Include="JSPackerCrypto\IJSPackerCrypto.cs" />
+    <Compile Include="JSPackerCrypto\StandardJSStyle.cs" />
+    <Compile Include="JSPackerCrypto\TypeConversion\Alpha_a.cs" />
+    <Compile Include="JSPackerCrypto\TypeConversion\Alpha_b.cs" />
+    <Compile Include="JSPackerCrypto\TypeConversion\Alpha_c.cs" />
+    <Compile Include="JSPackerCrypto\TypeConversion\Alpha_d.cs" />
+    <Compile Include="JSPackerCrypto\TypeConversion\Alpha_e.cs" />
+    <Compile Include="JSPackerCrypto\TypeConversion\Alpha_f.cs" />
+    <Compile Include="JSPackerCrypto\TypeConversion\Alpha_i.cs" />
+    <Compile Include="JSPackerCrypto\TypeConversion\Alpha_j.cs" />
+    <Compile Include="JSPackerCrypto\TypeConversion\Alpha_l.cs" />
+    <Compile Include="JSPackerCrypto\TypeConversion\Alpha_n.cs" />
+    <Compile Include="JSPackerCrypto\TypeConversion\Alpha_o.cs" />
+    <Compile Include="JSPackerCrypto\TypeConversion\Alpha_r.cs" />
+    <Compile Include="JSPackerCrypto\TypeConversion\Alpha_s.cs" />
+    <Compile Include="JSPackerCrypto\TypeConversion\Alpha_t.cs" />
+    <Compile Include="JSPackerCrypto\TypeConversion\Alpha_u.cs" />
+    <Compile Include="JSPackerCrypto\TypeConversion\ElementCryptoFactory.cs" />
+    <Compile Include="JSPackerCrypto\TypeConversion\GetCryptoElement.cs" />
+    <Compile Include="JSPackerCrypto\TypeConversion\IAlpha.cs" />
+    <Compile Include="JSPackerCrypto\TypeConversion\Number.cs" />
+    <Compile Include="JSPackerCrypto\TypeConversion\RawMetadata.cs" />
+    <Compile Include="JSPackerCrypto\TypeConversion\Space.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PuzzleFunction\FunctionRandom\BinaryExpressionRandom.cs" />
+    <Compile Include="PuzzleFunction\FunctionRandom\ExpressionPart\Addition.cs" />
+    <Compile Include="PuzzleFunction\FunctionRandom\ExpressionPart\And.cs" />
+    <Compile Include="PuzzleFunction\FunctionRandom\ExpressionPart\ExclusiveOr.cs" />
+    <Compile Include="PuzzleFunction\FunctionRandom\ExpressionPart\IExpressionPart.cs" />
+    <Compile Include="PuzzleFunction\FunctionRandom\ExpressionPart\Multiply.cs" />
+    <Compile Include="PuzzleFunction\FunctionRandom\ExpressionPart\Or.cs" />
+    <Compile Include="PuzzleFunction\FunctionRandom\ExpressionPart\Subtraction.cs" />
+    <Compile Include="PuzzleFunction\FunctionRandom\IFunctionRandom.cs" />
+    <Compile Include="PuzzleFunction\Puzzle\BinaryPuzzle.cs" />
+    <Compile Include="PuzzleFunction\Puzzle\FactoryPuzzle.cs" />
+    <Compile Include="PuzzleFunction\Puzzle\IPuzzle.cs" />
+    <Compile Include="PuzzleFunction\Transfer\BinaryExpressionToJSTransfer.cs" />
+    <Compile Include="PuzzleFunction\Transfer\ITransfer.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

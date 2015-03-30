@@ -1,0 +1,4 @@
+D:\Users\wbxia\Documents\GitHub\BinaryExpressionGenerateToken\BinaryExpressionGenerateToken\Core\bin\Debug\Core.dll
+D:\Users\wbxia\Documents\GitHub\BinaryExpressionGenerateToken\BinaryExpressionGenerateToken\Core\bin\Debug\Core.pdb
+D:\Users\wbxia\Documents\GitHub\BinaryExpressionGenerateToken\BinaryExpressionGenerateToken\Core\obj\Debug\Core.dll
+D:\Users\wbxia\Documents\GitHub\BinaryExpressionGenerateToken\BinaryExpressionGenerateToken\Core\obj\Debug\Core.pdb
